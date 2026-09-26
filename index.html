@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxora Realty | Curating Extraordinary Addresses | Delhi NCR Luxury Real Estate Consulting</title>
+  <meta name="description" content="Luxora Realty, founded by Deepika Bhardwaj (18+ Years Developer-Side Experience), provides independent luxury real estate consulting, primary sales, and select developer inventory across Delhi NCR. Direct Desk: +91 85869 76911.">
+  <meta name="keywords" content="Luxora Realty, Deepika Bhardwaj, Luxury Real Estate Delhi NCR, Gurgaon Luxury Residences, Max Estate 105, Experion Saatori, Three Sixty North Oberoi, Ultra Luxury Real Estate India">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/luxora-logo.png">
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=3.5">
+
+  <!-- Critical Navbar Isolation & Anti-Collision Styles -->
+  <style id="critical-navbar-lock">
+    .site-header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(250, 248, 242, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1560px;
+      margin: 0 auto;
+      padding: 0.85rem clamp(1rem, 2vw, 2.5rem);
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+    }
+    .brand-logo-wrap {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.85rem !important;
+      flex-shrink: 0 !important;
+      text-decoration: none !important;
+      white-space: nowrap !important;
+      padding-right: 1.5rem !important;
+      border-right: 1px solid rgba(197, 160, 89, 0.35) !important;
+      margin-right: 0.85rem !important;
+      position: relative !important;
+      z-index: 20 !important;
+    }
+    .brand-logo-img {
+      height: 48px !important;
+      width: auto !important;
+      object-fit: contain !important;
+      flex-shrink: 0 !important;
+    }
+    .brand-name-text {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      line-height: 1 !important;
+    }
+    .brand-title {
+      font-family: 'Cinzel', serif !important;
+      font-size: 1.6rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.14em !important;
+      color: #161A18 !important;
+      line-height: 1.05 !important;
+      margin: 0 !important;
+    }
+    .brand-sub {
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      font-size: 0.72rem !important;
+      letter-spacing: 0.28em !important;
+      text-transform: uppercase !important;
+      color: #C5A059 !important;
+      font-weight: 700 !important;
+      margin-top: 0.25rem !important;
+      line-height: 1 !important;
+    }
+    .main-nav {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: clamp(0.5rem, 0.85vw, 1.25rem) !important;
+      flex: 1 1 auto !important;
+      min-width: 0 !important;
+      overflow: hidden !important;
+      margin: 0 !important;
+    }
+    .nav-link {
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      font-size: 0.8rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      color: #242B27 !important;
+      padding: 0.45rem 0.35rem !important;
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+    }
+    .nav-cta-group {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.65rem !important;
+      flex-shrink: 0 !important;
+      margin-left: auto !important;
+      position: relative !important;
+      z-index: 20 !important;
+    }
+    .btn-header-cta {
+      padding: 0.65rem 1.35rem !important;
+      font-size: 0.82rem !important;
+      letter-spacing: 0.05em !important;
+    }
+    .mobile-call-icon-btn {
+      display: none !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 38px !important;
+      height: 38px !important;
+      background: linear-gradient(135deg, #DFBE76 0%, #C5A059 50%, #9F7B34 100%) !important;
+      color: #161A18 !important;
+      border-radius: 50% !important;
+      font-size: 1rem !important;
+      box-shadow: 0 3px 10px rgba(197, 160, 89, 0.3) !important;
+      text-decoration: none !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* Standard Laptops & Compact Monitors (1201px - 1380px) */
+    @media (min-width: 1201px) and (max-width: 1380px) {
+      .nav-container {
+        padding: 0.75rem 1.25rem !important;
+      }
+      .brand-logo-wrap {
+        padding-right: 1rem !important;
+        margin-right: 0.5rem !important;
+        gap: 0.65rem !important;
+      }
+      .brand-title {
+        font-size: 1.45rem !important;
+      }
+      .brand-logo-img {
+        height: 42px !important;
+      }
+      .main-nav {
+        gap: 0.65rem !important;
+      }
+      .nav-link {
+        font-size: 0.74rem !important;
+        padding: 0.35rem 0.25rem !important;
+        letter-spacing: 0.04em !important;
+      }
+      .btn-header-cta {
+        padding: 0.55rem 0.95rem !important;
+        font-size: 0.76rem !important;
+      }
+    }
+
+    /* Drawer Menu Threshold (< 1200px) */
+    @media (max-width: 1200px) {
+      .brand-logo-wrap {
+        border-right: none !important;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+      }
+      .main-nav {
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        background: #FAF8F2 !important;
+        border-bottom: 2px solid #C5A059 !important;
+        box-shadow: 0 16px 36px rgba(22, 26, 24, 0.16) !important;
+        padding: 1.5rem 2rem !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1.1rem !important;
+        z-index: 1000 !important;
+        overflow: visible !important;
+      }
+      .main-nav.active {
+        display: flex !important;
+      }
+      .main-nav .nav-link {
+        font-size: 0.95rem !important;
+        padding: 0.6rem 0 !important;
+        width: 100% !important;
+        border-bottom: 1px solid rgba(197, 160, 89, 0.15) !important;
+      }
+      .mobile-toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+    }
+
+    /* Mobile Phones (< 768px) */
+    @media (max-width: 768px) {
+      .btn-header-cta {
+        display: none !important;
+      }
+      .mobile-call-icon-btn {
+        display: inline-flex !important;
+      }
+      .hero-eyebrow-tagline {
+        font-size: 0.78rem !important;
+        letter-spacing: 0.1em !important;
+        line-height: 1.4 !important;
+        white-space: normal !important;
+      }
+      .brand-title {
+        font-size: 1.35rem !important;
+      }
+      .brand-logo-img {
+        height: 40px !important;
+      }
+    }
+  </style>
+
+  <!-- Three.js & OrbitControls for 3D Building Models -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Direct Contact: 85869 76911) -->
+  <div class="announcement-bar">
+    <div class="container">
+      <div class="announcement-left">
+        <span class="announcement-item">
+          <span>🏛️</span> 18+ Years Developer-Side Mastery
+        </span>
+        <span class="announcement-item">
+          <span>📍</span> Gurgaon • Noida • Greater Noida • Delhi
+        </span>
+      </div>
+      <div class="announcement-right">
+        <a href="tel:+918586976911" class="direct-call-pill">
+          <span>📞</span> Direct Advisory: <strong>+91 85869 76911</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header / Navigation (Fixed Logo/Brand Spacing to Left) -->
+  <header class="site-header">
+    <div class="nav-container">
+      <!-- Brand Logo & Name (Generous breathing room, shifted to left) -->
+      <a href="#" class="brand-logo-wrap" title="Luxora Realty">
+        <img src="assets/images/luxora-logo.png" alt="Luxora Realty Logo" class="brand-logo-img">
+        <div class="brand-name-text">
+          <span class="brand-title">LUXORA</span>
+          <span class="brand-sub">REALTY</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="main-nav-links">
+        <a href="#about-founder" class="nav-link">Founder Profile</a>
+        <a href="#building-3d" class="nav-link">3D Architecture</a>
+        <a href="#checker-folder" class="nav-link">Investment Checker</a>
+        <a href="#credentials" class="nav-link">Developer Citations</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#approach" class="nav-link">Five Pillars</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-cta-group">
+        <a href="tel:+918586976911" class="mobile-call-icon-btn" title="Call Deepika Bhardwaj Direct">📞</a>
+        <a href="#contact" class="btn btn-gold btn-header-cta">
+          Schedule Consultation
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section with 3D Welcome Figure (Namaste Greeting)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Independent Luxury Real Estate Advisory
+          </div>
+          <div class="hero-eyebrow-tagline">“CURATING EXTRAORDINARY ADDRESSES”</div>
+          <h1 class="hero-title">
+            Developer-Side Insight.<br>
+            <span class="gold-text">Extraordinary Addresses.</span>
+          </h1>
+          <p class="hero-desc">
+            Backed by <strong>18+ years on the developer side</strong>, Luxora Realty advises HNIs, CXOs, and global investors with unfiltered transparency, early-stage project launches, and direct developer allotments across Delhi NCR.
+          </p>
+
+          <!-- Core Credentials Strip -->
+          <div class="hero-credentials-row">
+            <div class="credential-item">
+              <div class="credential-icon">💎</div>
+              <div class="credential-text">
+                <strong>18+ Years</strong>
+                <span>Developer-Side Mastery</span>
+              </div>
+            </div>
+            <div class="credential-item">
+              <div class="credential-icon">📜</div>
+              <div class="credential-text">
+                <strong>Primary Sales</strong>
+                <span>100% Developer Direct</span>
+              </div>
+            </div>
+            <div class="credential-item">
+              <div class="credential-icon">⚖️</div>
+              <div class="credential-text">
+                <strong>Zero Bias</strong>
+                <span>Fiduciary Buyer Counsel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#checker-folder" class="btn btn-gold">
+              Launch Investment Checker Folder
+            </a>
+            <a href="https://wa.me/918586976911?text=Hello%20Deepika%20Ma'am%2C%20I%20would%20like%20to%20schedule%20a%20private%20luxury%20real%20estate%20consultation." target="_blank" class="btn btn-whatsapp">
+              <span>💬</span> WhatsApp: 85869 76911
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual: 3D Welcome Figure Card (Respectful Namaste Greeting) -->
+        <div class="hero-welcome-figure-wrap">
+          <div class="welcome-3d-card">
+            <div class="welcome-figure-frame">
+              <img src="assets/images/deepika-namaste-full.png" alt="Deepika Bhardwaj Welcome Figure with Namaste Gesture">
+              
+              <!-- Floating Namaste Welcome Badge -->
+              <div class="namaste-welcome-badge">
+                <div class="namaste-header">
+                  <span class="namaste-tag">Executive Welcome</span>
+                  <span style="font-size: 0.75rem; color: var(--gold-light);">Founder & Principal</span>
+                </div>
+                <h4>Deepika Bhardwaj</h4>
+                <p>
+                  “Namaste & welcome to Luxora Realty. We bring uncompromised transparency and 18+ years of developer-side experience directly to your acquisition journey.”
+                </p>
+                <div class="namaste-action-row">
+                  <span>📍 Delhi NCR Advisory Desk</span>
+                  <a href="tel:+918586976911">📞 85869 76911</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Experience Badge -->
+          <div class="hero-experience-badge">
+            <div class="exp-num">18+</div>
+            <div class="exp-lbl">Years of Developer<br>Side Leadership</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Stats Strip -->
+  <div class="hero-stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">18<span class="gold-text">+</span></div>
+          <div class="stat-label">Years of Industry Authority</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">₹2,800<span class="gold-text">Cr+</span></div>
+          <div class="stat-label">Primary Sales Advised</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">100<span class="gold-text">%</span></div>
+          <div class="stat-label">Direct Developer Inventory</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">450<span class="gold-text">+</span></div>
+          <div class="stat-label">HNI & NRI Families Guided</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FEATURE 1: UPGRADED 3D ARCHITECTURAL MODEL (1024x1024 Canvas)
+       ========================================================================== -->
+  <section class="building-3d-section" id="building-3d">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag gold">Architectural Innovation</div>
+        <h2 class="section-title">Interactive 3D Architectural Model</h2>
+        <div class="hairline-divider"></div>
+        <p class="section-subtitle">
+          Explore our signature luxury skyscraper concept in interactive 3D space. Inspect panoramic glass elevations, metallic champagne gold fins, and landscaped podium gardens.
+        </p>
+      </div>
+
+      <div class="building-3d-container">
+        <!-- Left: Specifications & Highlights -->
+        <div class="building-info-col">
+          <div class="section-tag">Curated Elevation</div>
+          <h3 style="font-size: 2.3rem; margin-bottom: 1.25rem;">
+            The Pinnacle of Delhi NCR Skyline Design
+          </h3>
+          <p>
+            When advising ultra-luxury property purchasers, Deepika Bhardwaj conducts rigorous architectural evaluations—scrutinizing structural wind loads, floor-to-ceiling glass specs, floor plate efficiency, and double-height sky decks.
+          </p>
+
+          <ul class="building-spec-list">
+            <li class="building-spec-item">
+              <div class="spec-icon">✨</div>
+              <div class="spec-detail">
+                <strong>Metallic Champagne Gold Mullions</strong>
+                <span>Bespoke exterior vertical fins offering thermal shading and timeless architectural elegance.</span>
+              </div>
+            </li>
+            <li class="building-spec-item">
+              <div class="spec-icon">🌿</div>
+              <div class="spec-detail">
+                <strong>Light Green Terraced Sky-Gardens</strong>
+                <span>Cantilevered landscaped balconies blending serene greenery with contemporary high-rise living.</span>
+              </div>
+            </li>
+            <li class="building-spec-item">
+              <div class="spec-icon">👑</div>
+              <div class="spec-detail">
+                <strong>Penthouse Crown & Spire</strong>
+                <span>Levels 23–26 sky duplex suites featuring 9,800 sq.ft private residences with heated plunge pools.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#checker-folder" class="btn btn-gold">Check Investment Parameters</a>
+            <a href="tel:+918586976911" class="btn btn-outline-gold">Direct Desk: 85869 76911</a>
+          </div>
+        </div>
+
+        <!-- Right: 1024x1024 3D Viewport Box -->
+        <div class="building-3d-viewport-wrapper">
+          <!-- Viewport Header Controls -->
+          <div class="building-3d-header">
+            <div class="building-3d-badge">
+              <span>●</span> 3D WebGL Skyscraper
+            </div>
+            <div class="building-3d-controls-top">
+              <button class="control-pill-btn active" id="btn-3d-rotate"><span>⏸</span> Pause</button>
+              <button class="control-pill-btn active" id="btn-3d-dusk">Golden Dusk</button>
+              <button class="control-pill-btn" id="btn-3d-day">Daylight</button>
+              <button class="control-pill-btn" id="btn-3d-penthouse">Sky Penthouse</button>
+            </div>
+          </div>
+
+          <!-- Canvas Element -->
+          <canvas id="building-three-canvas"></canvas>
+
+          <!-- Viewport Overlay Footer -->
+          <div class="building-3d-footer-overlay">
+            <div>
+              <p style="font-size: 0.92rem; font-weight: 700; color: var(--text-dark); margin: 0;" id="3d-level-title">Golden Dusk Aura</p>
+              <p style="font-size: 0.76rem; color: var(--text-muted); margin: 0;" id="3d-level-meta">Drag to rotate 360° • Pinch / Scroll to zoom</p>
+            </div>
+            <div style="font-size: 0.74rem; color: var(--gold-dark); font-weight: 700; display: flex; align-items: center; gap: 0.35rem;">
+              <span>🖱️</span> Live Orbit
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ADDITIONAL 3D ARCHITECTURAL ELEMENT: SKY VILLA SPATIAL BLUEPRINT
+       ========================================================================== -->
+  <section class="spatial-3d-section">
+    <div class="container">
+      <div class="spatial-grid">
+        <div class="spatial-content">
+          <div class="section-tag" style="background: rgba(197, 160, 89, 0.2); color: var(--gold-bright); border-color: rgba(197, 160, 89, 0.4);">
+            Spatial Geometry
+          </div>
+          <h3>Interactive 3D Penthouse Duplex Spatial Blueprint</h3>
+          <p>
+            Inspect the internal spatial distribution of a signature 9,800 sq.ft Sky Duplex. Featuring double-height central living salon, cantilevered private plunge pool, presidential primary wing, and dedicated staff quarters.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#portfolio" class="btn btn-gold" style="font-size: 0.8rem; padding: 0.65rem 1.4rem;">
+              View Penthouse Collection
+            </a>
+            <a href="https://wa.me/918586976911?text=Hello%20Deepika%20Ma'am%2C%20please%20share%20the%20floor%20plans%20for%20the%20signature%20Sky%20Duplex%20Penthouses." target="_blank" class="btn btn-whatsapp" style="font-size: 0.8rem; padding: 0.65rem 1.4rem;">
+              <span>💬</span> Request CAD Plans
+            </a>
+          </div>
+        </div>
+
+        <div class="spatial-interactive-box">
+          <div class="spatial-hud">
+            <span class="spatial-hud-tag">3D Level Blueprint</span>
+            <span class="spatial-hud-tag" style="color: var(--green-sage-subtle);">Orbit Active</span>
+          </div>
+          <canvas id="spatial-three-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURE 2: REFINED INVESTMENT PARAMETER CHECKER FOLDER
+       ========================================================================== -->
+  <section class="checker-folder-section" id="checker-folder">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag gold">Proprietary Advisory Tool</div>
+        <h2 class="section-title">Investment Parameter Checker Folder</h2>
+        <div class="hairline-divider"></div>
+        <p class="section-subtitle">
+          Adjust your capital parameters, target micro-markets, asset classes, and investment horizons to unlock developer-side intelligence, capital appreciation ranges, and direct developer allocations.
+        </p>
+      </div>
+
+      <!-- Physical Folder Shell -->
+      <div class="folder-dossier-wrap">
+        <!-- Folder Top Tabs Strip -->
+        <div class="folder-tabs-strip">
+          <button class="folder-tab-btn active" data-target="tab-parameter-studio">
+            <span>⚙️</span> Parameter Studio
+          </button>
+          <button class="folder-tab-btn" data-target="tab-pricing-matrix">
+            <span>📊</span> Developer Pricing Matrix
+          </button>
+          <button class="folder-tab-btn" data-target="tab-ncr-heatmap">
+            <span>🗺️</span> Delhi NCR Yield Heatmap
+          </button>
+          <button class="folder-tab-btn" data-target="tab-hni-guidelines">
+            <span>📑</span> HNI & NRI Acquisition Guide
+          </button>
+        </div>
+
+        <!-- Folder Body Panes -->
+        <div class="folder-body">
+          <!-- PANE 1: Parameter Studio -->
+          <div class="folder-pane active" id="tab-parameter-studio">
+            <div class="parameter-studio-grid">
+              <!-- Controls Column -->
+              <div class="parameter-controls-col">
+                <!-- Parameter 1: Ticket Size Slider -->
+                <div class="param-group">
+                  <div class="param-header">
+                    <span class="param-label"><span>💰</span> Target Capital Allocation</span>
+                    <span class="param-value-tag" id="param-budget-val">₹10 Cr</span>
+                  </div>
+                  <input type="range" class="param-slider" id="param-budget-slider" min="3" max="50" step="1" value="10">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                    <span>₹3 Cr (Entry Luxury)</span>
+                    <span>₹15 Cr</span>
+                    <span>₹30 Cr</span>
+                    <span>₹50 Cr+ (Trophy Sky Villa)</span>
+                  </div>
+                </div>
+
+                <!-- Parameter 2: Delhi NCR Micro-Market -->
+                <div class="param-group">
+                  <div class="param-header">
+                    <span class="param-label"><span>📍</span> Geographic Focus (Delhi NCR)</span>
+                  </div>
+                  <div class="chips-grid">
+                    <button class="chip-btn active" data-param="location" data-value="gurgaon_gce">Golf Course Ext (Ggn)</button>
+                    <button class="chip-btn" data-param="location" data-value="gurgaon_dxp">Dwarka Expressway</button>
+                    <button class="chip-btn" data-param="location" data-value="noida_150_151">Noida Sec 150/151</button>
+                    <button class="chip-btn" data-param="location" data-value="delhi_central_south">Central / South Delhi</button>
+                    <button class="chip-btn" data-param="location" data-value="greater_noida">Gr. Noida / Jewar</button>
+                  </div>
+                </div>
+
+                <!-- Parameter 3: Asset Class -->
+                <div class="param-group">
+                  <div class="param-header">
+                    <span class="param-label"><span>🏢</span> Luxury Asset Class</span>
+                  </div>
+                  <div class="chips-grid">
+                    <button class="chip-btn active" data-param="asset" data-value="residence">Ultra-Luxury Residence</button>
+                    <button class="chip-btn" data-param="asset" data-value="penthouse">Sky Penthouse / Duplex</button>
+                    <button class="chip-btn" data-param="asset" data-value="commercial">Grade-A Commercial</button>
+                    <button class="chip-btn" data-param="asset" data-value="prelaunch">New Pre-Launch Allocation</button>
+                  </div>
+                </div>
+
+                <!-- Parameter 4: Investment Horizon -->
+                <div class="param-group">
+                  <div class="param-header">
+                    <span class="param-label"><span>⏱️</span> Investment Horizon</span>
+                  </div>
+                  <div class="chips-grid">
+                    <button class="chip-btn" data-param="horizon" data-value="2_3_yr">2–3 Yrs (Pre-Launch Flip)</button>
+                    <button class="chip-btn active" data-param="horizon" data-value="4_6_yr">4–6 Yrs (Handover Capital Gain)</button>
+                    <button class="chip-btn" data-param="horizon" data-value="7_10_yr">7–10+ Yrs (Generational Wealth)</button>
+                  </div>
+                </div>
+
+                <!-- Parameter 5: Developer Tier -->
+                <div class="param-group">
+                  <div class="param-header">
+                    <span class="param-label"><span>🛡️</span> Developer Governance Tier</span>
+                  </div>
+                  <div class="chips-grid">
+                    <button class="chip-btn active" data-param="tier" data-value="fdi_tier1">Tier 1 Listed / FDI Developer</button>
+                    <button class="chip-btn" data-param="tier" data-value="curated_boutique">Curated Boutique Luxury</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Output & Projection Dashboard Column -->
+              <div class="parameter-results-col">
+                <div>
+                  <div class="results-badge-live">
+                    <span>●</span> Live Developer Analysis
+                  </div>
+                  <h4 style="color: var(--gold-light); font-size: 1.45rem; margin-bottom: 0.4rem;">Advisory Projection Dossier</h4>
+                  <p style="color: #BAC2BC; font-size: 0.88rem; margin-bottom: 1.5rem;">
+                    Institutional metrics generated based on 18+ years of developer-side sales, inventory spread, and launch cycle data.
+                  </p>
+
+                  <!-- Metrics Cards -->
+                  <div class="metrics-dashboard-grid">
+                    <div class="metric-card-dark">
+                      <div class="metric-caption">Projected Capital Growth</div>
+                      <div class="metric-val" id="output-capital-appreciation">+40% to +60%</div>
+                      <div style="font-size: 0.74rem; color: #8FD8A0; margin-top: 0.3rem;"><span>▲</span> High Alpha Trajectory</div>
+                    </div>
+                    <div class="metric-card-dark">
+                      <div class="metric-caption">Net Annual Yield</div>
+                      <div class="metric-val" id="output-rental-yield">4.4% - 5.9% p.a.</div>
+                      <div style="font-size: 0.74rem; color: #8FD8A0; margin-top: 0.3rem;"><span>★</span> Stable HNI Rental Pool</div>
+                    </div>
+                  </div>
+
+                  <!-- Developer Advantage Box -->
+                  <div class="developer-advantage-box">
+                    <h5>Developer-Side Edge Analysis</h5>
+                    <p id="output-developer-advantage">
+                      Direct developer inventory allotment ensures zero secondary mark-ups, bespoke payment construction milestones (e.g. 25:25:50), and priority unit selection.
+                    </p>
+                  </div>
+
+                  <!-- Recommended Developer Match -->
+                  <div class="recommended-inventory-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                      <span style="font-size: 1.05rem; font-weight: 700; color: #FFFFFF;" id="output-project-name">Three Sixty North by Oberoi</span>
+                      <span style="background: var(--green-sage-deep); color: #FFFFFF; font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: var(--radius-pill); font-weight: 700;">Direct Developer</span>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #BAC2BC; margin-bottom: 0.5rem;" id="output-project-sub">
+                      Gurgaon - Golf Course Ext. Rd • Direct Developer Inventory
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-top: 1px dashed rgba(197, 160, 89, 0.3); padding-top: 0.5rem;">
+                      <span style="color: #9EAAA1;">Advisory Allocation:</span>
+                      <strong style="color: var(--gold-light);" id="output-project-price">Allocation: ₹10 Cr Allotment</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Action CTA -->
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                  <button class="btn btn-gold" id="btn-apply-parameters" style="width: 100%;">
+                    <span>🔒</span> Apply Parameters to Private Advisory Session
+                  </button>
+                  <button class="btn btn-whatsapp" id="btn-whatsapp-parameters" style="width: 100%;">
+                    <span>💬</span> WhatsApp Parameters to Deepika: 85869 76911
+                  </button>
+                  <p style="text-align: center; font-size: 0.75rem; color: #8F9E94; margin: 0;">
+                    100% Confidential • Discretion Guaranteed • Zero Brokerage from Buyers
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PANE 2: Developer Pricing Matrix -->
+          <div class="folder-pane" id="tab-pricing-matrix">
+            <h4 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Delhi NCR Luxury Real Estate Pricing Matrix (2026 Developer Data)</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Compiled by Luxora Realty from direct developer allotments, launch circulars, and primary sales registers.
+            </p>
+
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                <thead>
+                  <tr style="background: var(--bg-cream-soft); border-bottom: 2px solid var(--gold-hairline);">
+                    <th style="padding: 1rem 1.25rem; font-size: 0.85rem; text-transform: uppercase;">Micro-Market</th>
+                    <th style="padding: 1rem 1.25rem; font-size: 0.85rem; text-transform: uppercase;">Benchmark Developer Projects</th>
+                    <th style="padding: 1rem 1.25rem; font-size: 0.85rem; text-transform: uppercase;">Launch Price</th>
+                    <th style="padding: 1rem 1.25rem; font-size: 0.85rem; text-transform: uppercase;">Current Value</th>
+                    <th style="padding: 1rem 1.25rem; font-size: 0.85rem; text-transform: uppercase;">Growth</th>
+                    <th style="padding: 1rem 1.25rem; font-size: 0.85rem; text-transform: uppercase;">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid rgba(197, 160, 89, 0.15);">
+                    <td style="padding: 1.15rem 1.25rem;"><strong>Noida Sector 105 / 151</strong></td>
+                    <td style="padding: 1.15rem 1.25rem;">Max Estate 105 & Experion Saatori</td>
+                    <td style="padding: 1.15rem 1.25rem;">₹11,500 / sq.ft</td>
+                    <td style="padding: 1.15rem 1.25rem;">₹16,800 / sq.ft</td>
+                    <td style="padding: 1.15rem 1.25rem; color: var(--green-sage-deep); font-weight: 700;">+46.1%</td>
+                    <td style="padding: 1.15rem 1.25rem;"><span style="background: var(--green-sage-light); color: var(--green-sage-deep); padding: 0.25rem 0.65rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700;">Recognized Contributor</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(197, 160, 89, 0.15);">
+                    <td style="padding: 1.15rem 1.25rem;"><strong>Golf Course Ext. Road (Ggn)</strong></td>
+                    <td style="padding: 1.15rem 1.25rem;">Three Sixty North by Oberoi / Trump Tower</td>
+                    <td style="padding: 1.15rem 1.25rem;">₹18,500 / sq.ft</td>
+                    <td style="padding: 1.15rem 1.25rem;">₹25,200 / sq.ft</td>
+                    <td style="padding: 1.15rem 1.25rem; color: var(--green-sage-deep); font-weight: 700;">+36.2%</td>
+                    <td style="padding: 1.15rem 1.25rem;"><span style="background: rgba(197, 160, 89, 0.15); color: var(--gold-dark); padding: 0.25rem 0.65rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700;">High Demand Allocation</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(197, 160, 89, 0.15);">
+                    <td style="padding: 1.15rem 1.25rem;"><strong>Dwarka Expressway (Ggn)</strong></td>
+                    <td style="padding: 1.15rem 1.25rem;">Experion Windchants & Sector 103</td>
+                    <td style="padding: 1.15rem 1.25rem;">₹13,800 / sq.ft</td>
+                    <td style="padding: 1.15rem 1.25rem;">₹20,500 / sq.ft</td>
+                    <td style="padding: 1.15rem 1.25rem; color: var(--green-sage-deep); font-weight: 700;">+48.5%</td>
+                    <td style="padding: 1.15rem 1.25rem;"><span style="background: var(--green-sage-light); color: var(--green-sage-deep); padding: 0.25rem 0.65rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700;">Developer Direct</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- PANE 3: NCR Yield Heatmap -->
+          <div class="folder-pane" id="tab-ncr-heatmap">
+            <h4 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Delhi NCR Micro-Market Growth & Yield Intelligence</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Comparative strategic analysis to guide HNIs in balancing capital appreciation with high-yield commercial annuities.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+              <div style="background: var(--bg-cream-soft); border: 1px solid var(--gold-hairline); border-radius: var(--radius-md); padding: 1.5rem;">
+                <h5 style="color: var(--gold-metallic); font-size: 1.05rem; margin-bottom: 0.6rem;">Golf Course Extension Road (Gurugram)</h5>
+                <p style="font-size: 0.85rem; color: var(--text-charcoal); margin-bottom: 0.8rem;">
+                  <strong>HNI Profile:</strong> CXOs, MNC Leaders, Global Corporates.<br>
+                  <strong>Catalysts:</strong> Southern Peripheral Road expansion, Cyber City 2 proximity.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--green-sage-deep); font-weight: 700;">
+                  Growth Rating: ★★★★★ | Yield: 4.4% - 4.9%
+                </div>
+              </div>
+
+              <div style="background: var(--bg-cream-soft); border: 1px solid var(--gold-hairline); border-radius: var(--radius-md); padding: 1.5rem;">
+                <h5 style="color: var(--gold-metallic); font-size: 1.05rem; margin-bottom: 0.6rem;">Noida Sector 150 / 151 Corridor</h5>
+                <p style="font-size: 0.85rem; color: var(--text-charcoal); margin-bottom: 0.8rem;">
+                  <strong>HNI Profile:</strong> Tech Entrepreneurs, FDI Investors.<br>
+                  <strong>Catalysts:</strong> Low-density green sector (80% green), Jewar International Airport link.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--green-sage-deep); font-weight: 700;">
+                  Growth Rating: ★★★★★ | Yield: 4.6% - 5.3%
+                </div>
+              </div>
+
+              <div style="background: var(--bg-cream-soft); border: 1px solid var(--gold-hairline); border-radius: var(--radius-md); padding: 1.5rem;">
+                <h5 style="color: var(--gold-metallic); font-size: 1.05rem; margin-bottom: 0.6rem;">Dwarka Expressway (Gurugram)</h5>
+                <p style="font-size: 0.85rem; color: var(--text-charcoal); margin-bottom: 0.8rem;">
+                  <strong>HNI Profile:</strong> Aerocity Executives, NRI Investors.<br>
+                  <strong>Catalysts:</strong> 16-lane operational expressway, direct IGI Airport tunnel.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--green-sage-deep); font-weight: 700;">
+                  Growth Rating: ★★★★★ | Yield: 4.0% - 4.6%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PANE 4: HNI & NRI Guidelines -->
+          <div class="folder-pane" id="tab-hni-guidelines">
+            <h4 style="font-size: 1.4rem; margin-bottom: 0.5rem;">HNI & NRI Luxury Real Estate Acquisition Framework</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Developer-side legal, taxation, and payment structuring considerations for Indian HNIs and Global NRIs.
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div style="background: #FFFFFF; border: 1px solid var(--green-sage-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+                <h5 style="color: var(--green-sage-deep); font-size: 1.05rem; margin-bottom: 0.5rem;">1. Capital Gains & Section 54/54F Rollover</h5>
+                <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.65;">
+                  Deploy up to ₹10 Crore into primary residential luxury assets to shelter capital gains under Sec 54/54F with escrow timeline precision.
+                </p>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid var(--green-sage-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+                <h5 style="color: var(--green-sage-deep); font-size: 1.05rem; margin-bottom: 0.5rem;">2. Primary Sales Zero Brokerage Advantage</h5>
+                <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.65;">
+                  Buyers pay zero brokerage on developer-direct inventory. Luxora Realty acts as your dedicated fiduciary advisor with institutional launch pricing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOUNDER SPOTLIGHT (Deepika Bhardwaj at Three Sixty North by Oberoi)
+       ========================================================================== -->
+  <section class="founder-section" id="about-founder">
+    <div class="container">
+      <div class="founder-grid">
+        <!-- Media Stack -->
+        <div class="founder-media-stack">
+          <div class="founder-portrait-main">
+            <!-- Authentic Photo at Three Sixty North by Oberoi Realty Gurugram -->
+            <img src="assets/images/deepika-oberoi-three-sixty.png" alt="Deepika Bhardwaj at Three Sixty North by Oberoi Realty Gurugram">
+          </div>
+
+          <!-- Subcard with namaste portrait -->
+          <div class="founder-award-subcard">
+            <img src="assets/images/deepika-namaste-portrait.png" alt="Deepika Bhardwaj Welcome">
+            <p style="font-size: 0.82rem; font-weight: 700; color: var(--text-dark); margin: 0;">Deepika Bhardwaj</p>
+            <span style="font-size: 0.72rem; color: var(--gold-metallic); font-weight: 600;">Founder & Luxury Real Estate Consultant</span>
+          </div>
+        </div>
+
+        <!-- Founder Story Content -->
+        <div class="founder-content">
+          <div class="section-tag gold">Founder & Advisory Principal</div>
+          <h3>Deepika Bhardwaj</h3>
+          <span class="founder-title-badge">Founder & Luxury Real Estate Consultant • 18+ Years Industry Veteran</span>
+
+          <div style="color: var(--text-charcoal); line-height: 1.8;">
+            <p style="margin-bottom: 1.25rem;">
+              Deepika Bhardwaj brings over <strong>18+ years of distinguished experience</strong> in the real estate industry, with an exceptional track record in primary sales and ultra-luxury developments across Delhi NCR.
+            </p>
+            <p style="margin-bottom: 1.25rem;">
+              Having spent the decisive majority of her career directly <strong>on the developer side</strong>, Deepika possesses rare, behind-the-scenes mastery of how real estate institutions operate. From project conceptualization and landmark launches to inventory allocation, underwriting pricing models, and client advisory, she has shaped the success of leading landmark addresses.
+            </p>
+            <p>
+              Recognizing that discerning high-net-worth buyers frequently encounter speculative intermediaries, Deepika founded <strong>Luxora Realty</strong> to bridge that exact void—delivering developer-level precision, research, and honesty directly to the buyer's table through uncompromised independent consulting.
+            </p>
+          </div>
+
+          <!-- Developer-Side Edge Box -->
+          <div class="developer-side-edge-box">
+            <div class="edge-title">
+              <span>🛡️</span> The Developer-Side Strategic Advantage
+            </div>
+            <ul class="edge-points">
+              <li>Insider knowledge of developer cost sheets & margins</li>
+              <li>Priority access to pre-launch allocations & penthouses</li>
+              <li>Unvarnished evaluation of builder financial solvency</li>
+              <li>Expert contract review & RERA clause scrutiny</li>
+              <li>Direct liaison with C-suite developer leadership</li>
+              <li>Zero brokerage on primary developer inventory</li>
+            </ul>
+          </div>
+
+          <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+            <a href="tel:+918586976911" class="btn btn-gold">
+              <span>📞</span> Call Deepika: 85869 76911
+            </a>
+            <a href="https://wa.me/918586976911" target="_blank" class="btn btn-whatsapp">
+              <span>💬</span> WhatsApp Direct
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DEVELOPER CITATIONS & STAGE RECOGNITION
+       (Max Estates Power Player Stage, Experion Saatori Team, Certificates)
+       ========================================================================== -->
+  <section class="recognition-section" id="credentials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag gold">Proven Credibility</div>
+        <h2 class="section-title">Developer Citations & Industry Recognition</h2>
+        <div class="hairline-divider"></div>
+        <p class="section-subtitle">
+          Tangible verification of our developer-side contribution, trusted partnerships, and benchmark transaction volumes across top-tier developers.
+        </p>
+      </div>
+
+      <div class="awards-grid">
+        <!-- Award 1: Max Estates Estate 105 Power Player Stage Ceremony -->
+        <div class="award-card">
+          <div class="award-img-wrapper award-trigger" data-img="assets/images/deepika-max-power-player.png" data-caption="Deepika Bhardwaj receiving the Estate 105 - Luxora Realty Power Player Award from Max Estates Leadership">
+            <img src="assets/images/deepika-max-power-player.png" alt="Max Estates Estate 105 Power Player Felicitation">
+            <span class="award-expand-hint">🔍 View Full Image</span>
+          </div>
+          <div class="award-meta">
+            <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem;">Estate 105 Power Player Award</h4>
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--gold-metallic); text-transform: uppercase; margin-bottom: 0.65rem;">Max Estates Stage Felicitation</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Honored on stage by Max Estates leadership as a benchmark <strong>Power Player</strong> for the record-breaking success and primary sales advisory of Estate 105 Noida.
+            </p>
+            <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(197, 160, 89, 0.2); padding-top: 0.85rem; font-size: 0.8rem; color: var(--green-sage-deep); font-weight: 700;">
+              <span>Sector 105, Noida</span>
+              <span>Stage Honors</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Award 2: Experion Saatori Sector 151 Team Felicitation -->
+        <div class="award-card">
+          <div class="award-img-wrapper award-trigger" data-img="assets/images/deepika-experion-team.jpg" data-caption="Experion FDI Developers felicitation ceremony with corporate executives for Experion Saatori Sector 151">
+            <img src="assets/images/deepika-experion-team.jpg" alt="Experion Saatori Delegation Felicitation">
+            <span class="award-expand-hint">🔍 View Full Image</span>
+          </div>
+          <div class="award-meta">
+            <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem;">Experion Saatori Landmark Honors</h4>
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--gold-metallic); text-transform: uppercase; margin-bottom: 0.65rem;">Experion FDI Developers</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Formal delegation award ceremony with Experion corporate leadership, recognizing Deepika Bhardwaj’s strategic role in shaping the Japanese-inspired landmark project in Sector 151.
+            </p>
+            <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(197, 160, 89, 0.2); padding-top: 0.85rem; font-size: 0.8rem; color: var(--green-sage-deep); font-weight: 700;">
+              <span>Sector 151, Noida</span>
+              <span>Key FDI Partner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Award 3: Official Max Estates 105 Signed Certificate -->
+        <div class="award-card">
+          <div class="award-img-wrapper cert award-trigger" data-img="assets/images/certificate-max-105.png" data-caption="Official Certificate of Remarkable Contributions issued to Luxora Realty by Max Estates">
+            <img src="assets/images/certificate-max-105.png" alt="Max Estates Official Certificate">
+            <span class="award-expand-hint">🔍 Click to Expand</span>
+          </div>
+          <div class="award-meta">
+            <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem;">Max Estates Certificate of Success</h4>
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--gold-metallic); text-transform: uppercase; margin-bottom: 0.65rem;">Signed by Sales Head, Max Estates</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Official institutional certificate celebrating the remarkable contributions of <strong>Luxora Realty</strong> towards the success of Estate 105. Signed by Amit Srivastava, Sales Head.
+            </p>
+            <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(197, 160, 89, 0.2); padding-top: 0.85rem; font-size: 0.8rem; color: var(--green-sage-deep); font-weight: 700;">
+              <span>Verified Certificate</span>
+              <span>100% Direct</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CURATED DEVELOPER-DIRECT PORTFOLIO
+       (Distinctive cards: Handpicked Residences, Signature Penthouses, Ultra-Luxury Homes, Grade-A Commercial)
+       ========================================================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag gold">Curated Addresses</div>
+        <h2 class="section-title">Developer-Direct Luxury Portfolio</h2>
+        <div class="hairline-divider"></div>
+        <p class="section-subtitle">
+          Handpicked luxury residences, signature penthouses, ultra-luxury homes, and Grade-A commercial spaces across Delhi NCR with direct developer allotment.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Opportunities</button>
+        <button class="filter-btn" data-filter="residences">Handpicked Residences</button>
+        <button class="filter-btn" data-filter="penthouses">Signature Penthouses</button>
+        <button class="filter-btn" data-filter="ultra-luxury">Ultra-Luxury Homes</button>
+        <button class="filter-btn" data-filter="commercial">Grade-A Commercial</button>
+      </div>
+
+      <!-- Property Grid -->
+      <div class="property-grid">
+        <!-- Card 1: Handpicked Luxury Residences -->
+        <div class="property-card" data-category="residences">
+          <div class="property-thumbnail">
+            <img src="assets/images/ncr-luxury-tower.jpg" alt="Max Estate 105 Noida">
+            <div class="property-category-badge">Handpicked Luxury Residence</div>
+            <div class="property-location-tag">📍 Sector 105, Noida</div>
+          </div>
+          <div class="property-body">
+            <div class="property-developer-sub">Max Estates Limited</div>
+            <h3 class="property-title">Estate 105 Biophilic Enclave</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Biophilic ultra-luxury apartments crafted for holistic well-being. Expansive green landscapes, club amenities, and seamless Noida Expressway access.
+            </p>
+            <div class="property-specs-row">
+              <div><strong>Configuration</strong><span>3 & 4 BHK Suites</span></div>
+              <div><strong>Carpet Area</strong><span>2,850 - 4,200 sq.ft</span></div>
+              <div><strong>Allotment</strong><span>Direct Developer</span></div>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted);">Pricing</span>
+                <div class="price-val">₹4.8 Cr - ₹8.5 Cr</div>
+              </div>
+              <a href="https://wa.me/918586976911?text=Inquiring%20about%20Estate%20105%20Noida%20developer%20units" target="_blank" class="btn btn-gold" style="padding: 0.55rem 1.15rem; font-size: 0.78rem;">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Signature Penthouses -->
+        <div class="property-card" data-category="penthouses">
+          <div class="property-thumbnail">
+            <img src="assets/images/private-client-lounge.jpg" alt="Three Sixty North by Oberoi Realty">
+            <div class="property-category-badge">Signature Sky Penthouse</div>
+            <div class="property-location-tag">📍 Golf Course Ext, Gurgaon</div>
+          </div>
+          <div class="property-body">
+            <div class="property-developer-sub">Three Sixty North by Oberoi Realty</div>
+            <h3 class="property-title">The Grand Sky Duplex</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Double-height grand salon, 360-degree Aravali views, private heated plunge pool, and bespoke Oberoi 5-star concierge hospitality.
+            </p>
+            <div class="property-specs-row">
+              <div><strong>Configuration</strong><span>5 BHK Duplex Penthouse</span></div>
+              <div><strong>Carpet Area</strong><span>8,900 sq.ft</span></div>
+              <div><strong>Access</strong><span>Private Sky Elevators</span></div>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted);">Pricing</span>
+                <div class="price-val">₹18 Cr - ₹28 Cr</div>
+              </div>
+              <a href="https://wa.me/918586976911?text=Inquiring%20about%20Three%20Sixty%20North%20Oberoi%20Penthouse" target="_blank" class="btn btn-gold" style="padding: 0.55rem 1.15rem; font-size: 0.78rem;">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Ultra-Luxury Homes -->
+        <div class="property-card" data-category="ultra-luxury">
+          <div class="property-thumbnail">
+            <img src="assets/images/luxury-residence-interior.jpg" alt="Experion Saatori Sector 151 Noida">
+            <div class="property-category-badge">Ultra-Luxury Japanese Condo</div>
+            <div class="property-location-tag">📍 Sector 151, Noida</div>
+          </div>
+          <div class="property-body">
+            <div class="property-developer-sub">Experion FDI Developers</div>
+            <h3 class="property-title">Experion Saatori Condominiums</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Japanese zen-inspired ultra-luxury living focusing on mindfulness, expansive 80% green surroundings, and international FDI construction governance.
+            </p>
+            <div class="property-specs-row">
+              <div><strong>Configuration</strong><span>4 BHK Sky Condos</span></div>
+              <div><strong>Carpet Area</strong><span>3,400 - 5,100 sq.ft</span></div>
+              <div><strong>Governance</strong><span>100% FDI Backed</span></div>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted);">Pricing</span>
+                <div class="price-val">₹5.5 Cr - ₹11 Cr</div>
+              </div>
+              <a href="https://wa.me/918586976911?text=Inquiring%20about%20Experion%20Saatori%20Noida" target="_blank" class="btn btn-gold" style="padding: 0.55rem 1.15rem; font-size: 0.78rem;">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Grade-A Commercial Spaces -->
+        <div class="property-card" data-category="commercial">
+          <div class="property-thumbnail">
+            <img src="assets/images/ncr-luxury-tower.jpg" alt="Prime Commercial Tower Golf Course Road">
+            <div class="property-category-badge">Grade-A Pre-Leased Commercial</div>
+            <div class="property-location-tag">📍 Golf Course Road, Gurgaon</div>
+          </div>
+          <div class="property-body">
+            <div class="property-developer-sub">Institutional Commercial Partner</div>
+            <h3 class="property-title">Equinox Institutional Corporate Suites</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              LEED Platinum certified commercial floor plates pre-leased to Fortune 500 multinationals. Offering guaranteed annuity rental cash flows with institutional lock-ins.
+            </p>
+            <div class="property-specs-row">
+              <div><strong>Asset Class</strong><span>Pre-Leased Offices</span></div>
+              <div><strong>Lease Term</strong><span>9 Years (3+3+3)</span></div>
+              <div><strong>Net Yield</strong><span>8.2% p.a.</span></div>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted);">Ticket Size</span>
+                <div class="price-val">₹8 Cr - ₹35 Cr</div>
+              </div>
+              <a href="https://wa.me/918586976911?text=Inquiring%20about%20Grade%20A%20Pre%20Leased%20Commercial" target="_blank" class="btn btn-gold" style="padding: 0.55rem 1.15rem; font-size: 0.78rem;">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Central Delhi Mansion Floor -->
+        <div class="property-card" data-category="ultra-luxury">
+          <div class="property-thumbnail">
+            <img src="assets/images/private-client-lounge.jpg" alt="South Delhi Luxury Floor">
+            <div class="property-category-badge">Boutique Capital Consortia</div>
+            <div class="property-location-tag">📍 Vasant Vihar, South Delhi</div>
+          </div>
+          <div class="property-body">
+            <div class="property-developer-sub">Direct Builder Consortium</div>
+            <h3 class="property-title">Vasant Vihar Signature Mansion Floor</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Entire 600 sq. yard floor plate with private stilt parking for 4 vehicles, dedicated staff quarters, imported Italian marble finishes, and private terrace garden.
+            </p>
+            <div class="property-specs-row">
+              <div><strong>Configuration</strong><span>4 BHK Mansion Floor</span></div>
+              <div><strong>Plot Area</strong><span>600 Sq. Yards</span></div>
+              <div><strong>Title</strong><span>Freehold Clear</span></div>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted);">Pricing</span>
+                <div class="price-val">₹16 Cr - ₹24 Cr</div>
+              </div>
+              <a href="https://wa.me/918586976911?text=Inquiring%20about%20Vasant%20Vihar%20Floor" target="_blank" class="btn btn-gold" style="padding: 0.55rem 1.15rem; font-size: 0.78rem;">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Pre-Launch Reserve Dwarka Expressway -->
+        <div class="property-card" data-category="residences">
+          <div class="property-thumbnail">
+            <img src="assets/images/luxury-residence-interior.jpg" alt="Dwarka Expressway Pre-Launch">
+            <div class="property-category-badge">Pre-Launch Developer Reserve</div>
+            <div class="property-location-tag">📍 Dwarka Expressway, Gurgaon</div>
+          </div>
+          <div class="property-body">
+            <div class="property-developer-sub">Top Tier National Developer</div>
+            <h3 class="property-title">The Sovereign Reserve</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Ultra-luxury low-density development launched with premier construction linked payment plan. Early allotment pricing ensures immediate capital buffer over secondary rates.
+            </p>
+            <div class="property-specs-row">
+              <div><strong>Configuration</strong><span>3.5 & 4.5 BHK</span></div>
+              <div><strong>Carpet Area</strong><span>3,100 - 4,400 sq.ft</span></div>
+              <div><strong>Payment Plan</strong><span>25:25:50 Special</span></div>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted);">Pricing</span>
+                <div class="price-val">₹4.2 Cr - ₹7.8 Cr</div>
+              </div>
+              <a href="https://wa.me/918586976911?text=Inquiring%20about%20Dwarka%20Expressway%20Pre%20Launch" target="_blank" class="btn btn-gold" style="padding: 0.55rem 1.15rem; font-size: 0.78rem;">Inquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REFINED FIVE PILLARS OF LUXORA ADVISORY
+       ========================================================================== -->
+  <section class="approach-section" id="approach">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag gold">Our Philosophy</div>
+        <h2 class="section-title">The Five Pillars of Luxora Advisory</h2>
+        <div class="hairline-divider"></div>
+        <p class="section-subtitle">
+          "A luxury property purchase should be anchored in verified data, thorough developer due diligence, and transparent counsel."
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1 -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">⚖️</div>
+          <div class="pillar-number">PILLAR 01</div>
+          <h4 class="pillar-title">Transparency</h4>
+          <p class="pillar-desc">
+            Complete clarity on developer pricing structures, hidden charges, RERA timelines, and secondary market reality. Zero smoke and mirrors.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">🛡️</div>
+          <div class="pillar-number">PILLAR 02</div>
+          <h4 class="pillar-title">Honesty</h4>
+          <p class="pillar-desc">
+            If a project fails strict construction, governance, or capital preservation standards, we will advise you against purchasing it.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">📊</div>
+          <div class="pillar-number">PILLAR 03</div>
+          <h4 class="pillar-title">Research</h4>
+          <p class="pillar-desc">
+            Granular analysis of micro-market absorption rates, rental demand trends, infrastructure timelines, and competitive supply pipeline.
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">💎</div>
+          <div class="pillar-number">PILLAR 04</div>
+          <h4 class="pillar-title">Expertise</h4>
+          <p class="pillar-desc">
+            18+ years of developer-side operational mastery translating into institutional negotiation leverage and early inventory access.
+          </p>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">🤝</div>
+          <div class="pillar-number">PILLAR 05</div>
+          <h4 class="pillar-title">Personalised Advisory</h4>
+          <p class="pillar-desc">
+            Every client works directly with founder Deepika Bhardwaj. No junior associates, no outsourced call centers—pure bespoke consulting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION WITH DIRECT CALL & WHATSAPP: 85869 76911
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <!-- Contact Info Column -->
+        <div class="contact-info-col">
+          <div class="section-tag gold" style="color: var(--gold-bright); background: rgba(197, 160, 89, 0.2);">
+            Confidential Advisory
+          </div>
+          <h3>Curate Your Extraordinary Address</h3>
+          <p style="color: #D3DBD6; font-size: 1.05rem; line-height: 1.8;">
+            Connect directly with Deepika Bhardwaj for a private, confidential real estate consultation. Receive unfiltered developer-side insight across Delhi NCR.
+          </p>
+
+          <div class="direct-channels">
+            <a href="tel:+918586976911" class="channel-card">
+              <div class="channel-icon">📞</div>
+              <div class="channel-meta">
+                <strong>Direct Consultation Line</strong>
+                <span>+91 85869 76911 (Deepika Bhardwaj)</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/918586976911?text=Hello%20Deepika%20Ma'am%2C%20I%20would%20like%20to%20schedule%20a%20private%20luxury%20real%20estate%20consultation." target="_blank" class="channel-card">
+              <div class="channel-icon wa">💬</div>
+              <div class="channel-meta">
+                <strong>Instant WhatsApp Concierge</strong>
+                <span>+91 85869 76911 (Direct HNI Priority Desk)</span>
+              </div>
+            </a>
+
+            <div class="channel-card">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-meta">
+                <strong>Executive Advisory Email</strong>
+                <span>advisory@luxorarealty.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.85rem; color: #BAC2BC;">
+            📍 Advisory Presence: Gurugram • Noida • South Delhi
+          </div>
+        </div>
+
+        <!-- VIP Form -->
+        <div style="background: rgba(255, 255, 255, 0.98); border-radius: var(--radius-lg); padding: 2.4rem; color: var(--text-dark); box-shadow: var(--shadow-md);">
+          <h4 style="font-size: 1.5rem; color: var(--text-dark); margin-bottom: 0.35rem;">Request Private Advisory Session</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">Direct, confidential consultation with Deepika Bhardwaj</p>
+
+          <form id="vip-consultation-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Your Full Name *</label>
+                <input type="text" id="form-name" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. Vikramaditya Singhania" required>
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Mobile / WhatsApp *</label>
+                <input type="tel" id="form-phone" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="+91 / International" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Email Address *</label>
+                <input type="email" id="form-email" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="name@domain.com" required>
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Target Budget</label>
+                <input type="text" id="form-budget" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. ₹10 Crores" value="₹10 Crores">
+              </div>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Preferred Micro-Market</label>
+              <select id="form-location" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem; background: #FAF8F5;">
+                <option value="Golf Course Ext. Road (Gurgaon)">Golf Course Ext. Road (Gurgaon)</option>
+                <option value="Dwarka Expressway (Gurgaon)">Dwarka Expressway (Gurgaon)</option>
+                <option value="Noida Sector 150 / 151 Expressway">Noida Sector 150 / 151 Expressway</option>
+                <option value="Central & South Delhi Luxury Enclaves">Central & South Delhi Luxury Enclaves</option>
+                <option value="Greater Noida & Yamuna Corridor">Greater Noida & Yamuna Corridor</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Specific Requirements / Developer Preference</label>
+              <textarea id="form-notes" rows="3" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="Mention preferred developers (e.g. Max Estates, Oberoi, Experion) or timelines..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1.05rem; font-size: 0.95rem;">
+              <span>🔒</span> Book Confidential Advisory Session
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer" style="background: #121513; color: #D3DAD5; padding: 4.8rem 0 2.2rem; border-top: 2px solid var(--gold-metallic);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 3.5rem; margin-bottom: 3.5rem;">
+        <!-- Brand Info -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.9rem;">
+            <img src="assets/images/luxora-logo.png" alt="Luxora Realty" style="height: 48px; width: auto;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.65rem; color: var(--gold-light); letter-spacing: 0.12em;">LUXORA REALTY</h4>
+          </div>
+          <div style="font-size: 0.84rem; letter-spacing: 0.16em; color: var(--gold-bright); text-transform: uppercase; margin-bottom: 1.25rem; font-weight: 600;">
+            “CURATING EXTRAORDINARY ADDRESSES”
+          </div>
+          <p style="font-size: 0.9rem; color: #9EAAA1; line-height: 1.75;">
+            An independent luxury real estate consulting & advisory firm backed by 18+ years of developer-side experience. Direct developer access, transparent pricing, and research-led advisory across Delhi NCR.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h5 style="color: #FFFFFF; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem;">Navigation</h5>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem;">
+            <li><a href="#about-founder" style="color: #BAC2BC; font-size: 0.88rem;">Deepika Bhardwaj</a></li>
+            <li><a href="#building-3d" style="color: #BAC2BC; font-size: 0.88rem;">3D Architectural Tower</a></li>
+            <li><a href="#checker-folder" style="color: #BAC2BC; font-size: 0.88rem;">Investment Parameter Checker</a></li>
+            <li><a href="#credentials" style="color: #BAC2BC; font-size: 0.88rem;">Developer Recognition</a></li>
+            <li><a href="#portfolio" style="color: #BAC2BC; font-size: 0.88rem;">Curated Properties</a></li>
+            <li><a href="#approach" style="color: #BAC2BC; font-size: 0.88rem;">The Five Pillars</a></li>
+          </ul>
+        </div>
+
+        <!-- Micro-Markets -->
+        <div>
+          <h5 style="color: #FFFFFF; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem;">Delhi NCR Focus</h5>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem;">
+            <li><a href="#portfolio" style="color: #BAC2BC; font-size: 0.88rem;">Golf Course Ext. Road</a></li>
+            <li><a href="#portfolio" style="color: #BAC2BC; font-size: 0.88rem;">Dwarka Expressway</a></li>
+            <li><a href="#portfolio" style="color: #BAC2BC; font-size: 0.88rem;">Noida Sector 150 / 151</a></li>
+            <li><a href="#portfolio" style="color: #BAC2BC; font-size: 0.88rem;">Central & South Delhi</a></li>
+            <li><a href="#portfolio" style="color: #BAC2BC; font-size: 0.88rem;">Greater Noida / Jewar</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Advisory Desk -->
+        <div>
+          <h5 style="color: #FFFFFF; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem;">Direct Desk</h5>
+          <p style="font-size: 0.88rem; color: #BAC2BC; margin-bottom: 1.1rem;">
+            Direct consultation with Founder Deepika Bhardwaj for HNIs, NRIs, and institutional property buyers.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+            <a href="tel:+918586976911" class="btn btn-outline-gold" style="font-size: 0.82rem; padding: 0.55rem 1rem; color: #FFFFFF;">
+              <span>📞</span> Call: +91 85869 76911
+            </a>
+            <a href="https://wa.me/918586976911" target="_blank" class="btn btn-whatsapp" style="font-size: 0.82rem; padding: 0.55rem 1rem;">
+              <span>💬</span> WhatsApp: 85869 76911
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: #7D8882;">
+        <div style="max-width: 650px; line-height: 1.5;">
+          <strong>RERA & Advisory Disclaimer:</strong> Luxora Realty is an independent luxury real estate consulting and advisory practice founded by Deepika Bhardwaj. All project specifications, visual renderings, prices, and floor plans are sourced directly from registered real estate developers and are subject to verification under UP RERA / Haryana RERA.
+        </div>
+        <div>
+          © 2026 Luxora Realty. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating VIP Concierge Dock (Call & WhatsApp 85869 76911) -->
+  <aside class="floating-concierge-dock" aria-label="Quick Contact Concierge">
+    <a href="tel:+918586976911" class="dock-btn dock-call" title="Call Deepika Bhardwaj">
+      <span>📞</span> 85869 76911
+    </a>
+    <a href="https://wa.me/918586976911?text=Hello%20Deepika%20Ma'am%2C%20I%20would%20like%20to%20inquire%20about%20luxury%20properties%20in%20Delhi%20NCR." target="_blank" class="dock-btn dock-wa" title="WhatsApp Deepika Bhardwaj">
+      <span>💬</span> WhatsApp Concierge
+    </a>
+  </aside>
+
+  <!-- Certificate Modal Popup -->
+  <div class="modal-overlay" id="certificate-modal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Preview">✕</button>
+      <div class="modal-img-frame">
+        <img id="modal-cert-image" src="" alt="Award Document Certificate">
+      </div>
+      <div class="modal-caption" id="modal-cert-caption">Certificate Preview</div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Files -->
+  <script src="assets/js/building3d.js"></script>
+  <script src="assets/js/investment-checker.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
