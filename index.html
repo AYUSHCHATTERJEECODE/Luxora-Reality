@@ -598,11 +598,11 @@
                     <span class="param-value-tag" id="param-budget-val">₹10 Cr</span>
                   </div>
                   <input type="range" class="param-slider" id="param-budget-slider" min="3" max="50" step="1" value="10">
-                  <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                  <div class="slider-scale-row">
                     <span>₹3 Cr (Entry Luxury)</span>
                     <span>₹15 Cr</span>
                     <span>₹30 Cr</span>
-                    <span>₹50 Cr+ (Trophy Sky Villa)</span>
+                    <span>₹50 Cr+ (Sky Villa)</span>
                   </div>
                 </div>
 
@@ -692,14 +692,14 @@
 
                   <!-- Recommended Developer Match -->
                   <div class="recommended-inventory-card">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <div class="recommended-card-header">
                       <span style="font-size: 1.05rem; font-weight: 700; color: #FFFFFF;" id="output-project-name">Three Sixty North by Oberoi</span>
                       <span style="background: var(--green-sage-deep); color: #FFFFFF; font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: var(--radius-pill); font-weight: 700;">Direct Developer</span>
                     </div>
                     <div style="font-size: 0.82rem; color: #BAC2BC; margin-bottom: 0.5rem;" id="output-project-sub">
                       Gurgaon - Golf Course Ext. Rd • Direct Developer Inventory
                     </div>
-                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-top: 1px dashed rgba(197, 160, 89, 0.3); padding-top: 0.5rem;">
+                    <div class="recommended-card-price-row">
                       <span style="color: #9EAAA1;">Advisory Allocation:</span>
                       <strong style="color: var(--gold-light);" id="output-project-price">Allocation: ₹10 Cr Allotment</strong>
                     </div>
@@ -1302,29 +1302,29 @@
           <form id="vip-consultation-form">
             <div class="form-row-2col">
               <div>
-                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Your Full Name *</label>
-                <input type="text" id="form-name" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. Vikramaditya Singhania" required>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Client Full Name *</label>
+                <input type="text" id="form-name" class="vip-input" style="width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. Vikramaditya Singhania" required>
               </div>
               <div>
                 <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Mobile / WhatsApp *</label>
-                <input type="tel" id="form-phone" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="+91 / International" required>
+                <input type="tel" id="form-phone" class="vip-input" style="width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="+91 / International" required>
               </div>
             </div>
 
             <div class="form-row-2col">
               <div>
                 <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Email Address *</label>
-                <input type="email" id="form-email" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="name@domain.com" required>
+                <input type="email" id="form-email" class="vip-input" style="width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="name@domain.com" required>
               </div>
               <div>
-                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Target Budget</label>
-                <input type="text" id="form-budget" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. ₹10 Crores" value="₹10 Crores">
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Target Budget / Total Capitalization *</label>
+                <input type="text" id="form-budget" class="vip-input" style="width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. ₹10 Crores" value="₹10 Crores" required>
               </div>
             </div>
 
             <div style="margin-bottom: 1rem;">
               <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Preferred Micro-Market</label>
-              <select id="form-location" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem; background: #FAF8F5;">
+              <select id="form-location" class="vip-select" style="width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem; background: #FAF8F5;">
                 <option value="Golf Course Ext. Road (Gurgaon)">Golf Course Ext. Road (Gurgaon)</option>
                 <option value="Dwarka Expressway (Gurgaon)">Dwarka Expressway (Gurgaon)</option>
                 <option value="Noida Sector 150 / 151 Expressway">Noida Sector 150 / 151 Expressway</option>
@@ -1335,10 +1335,10 @@
 
             <div style="margin-bottom: 1.5rem;">
               <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Specific Requirements / Developer Preference</label>
-              <textarea id="form-notes" rows="3" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="Mention preferred developers (e.g. Max Estates, Oberoi, Experion) or timelines..."></textarea>
+              <textarea id="form-notes" class="vip-textarea" rows="3" style="width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="Mention preferred developers (e.g. Max Estates, Oberoi, Experion) or timelines..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1.05rem; font-size: 0.95rem;">
+            <button type="submit" class="btn btn-gold btn-submit-advisory" style="width: 100%; padding: 1.05rem; font-size: 0.95rem;">
               <span>🔒</span> Book Confidential Advisory Session
             </button>
           </form>
