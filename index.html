@@ -16,10 +16,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=3.5">
+  <link rel="stylesheet" href="assets/css/style.css?v=5.0">
 
   <!-- Critical Navbar Isolation & Anti-Collision Styles -->
   <style id="critical-navbar-lock">
+    html, body {
+      width: 100% !important;
+      max-width: 100vw !important;
+      overflow-x: hidden !important;
+      margin: 0;
+      padding: 0;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     .site-header {
       position: sticky;
       top: 0;
@@ -219,10 +229,28 @@
         white-space: normal !important;
       }
       .brand-title {
-        font-size: 1.35rem !important;
+        font-size: clamp(1.2rem, 4vw, 1.35rem) !important;
       }
       .brand-logo-img {
         height: 40px !important;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .nav-container {
+        padding: 0.65rem 0.85rem !important;
+      }
+      .brand-logo-img {
+        height: 36px !important;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand-title {
+        font-size: 1.12rem !important;
+      }
+      .brand-logo-img {
+        height: 32px !important;
       }
     }
   </style>
@@ -503,7 +531,7 @@
           <p>
             Inspect the internal spatial distribution of a signature 9,800 sq.ft Sky Duplex. Featuring double-height central living salon, cantilevered private plunge pool, presidential primary wing, and dedicated staff quarters.
           </p>
-          <div style="display: flex; gap: 1rem;">
+          <div class="spatial-cta-row">
             <a href="#portfolio" class="btn btn-gold" style="font-size: 0.8rem; padding: 0.65rem 1.4rem;">
               View Penthouse Collection
             </a>
@@ -749,7 +777,7 @@
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
               Comparative strategic analysis to guide HNIs in balancing capital appreciation with high-yield commercial annuities.
             </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <div class="heatmap-grid">
               <div style="background: var(--bg-cream-soft); border: 1px solid var(--gold-hairline); border-radius: var(--radius-md); padding: 1.5rem;">
                 <h5 style="color: var(--gold-metallic); font-size: 1.05rem; margin-bottom: 0.6rem;">Golf Course Extension Road (Gurugram)</h5>
                 <p style="font-size: 0.85rem; color: var(--text-charcoal); margin-bottom: 0.8rem;">
@@ -791,7 +819,7 @@
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
               Developer-side legal, taxation, and payment structuring considerations for Indian HNIs and Global NRIs.
             </p>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="dossier-2col-grid">
               <div style="background: #FFFFFF; border: 1px solid var(--green-sage-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
                 <h5 style="color: var(--green-sage-deep); font-size: 1.05rem; margin-bottom: 0.5rem;">1. Capital Gains & Section 54/54F Rollover</h5>
                 <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.65;">
@@ -1267,12 +1295,12 @@
         </div>
 
         <!-- VIP Form -->
-        <div style="background: rgba(255, 255, 255, 0.98); border-radius: var(--radius-lg); padding: 2.4rem; color: var(--text-dark); box-shadow: var(--shadow-md);">
+        <div class="vip-form-box">
           <h4 style="font-size: 1.5rem; color: var(--text-dark); margin-bottom: 0.35rem;">Request Private Advisory Session</h4>
           <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">Direct, confidential consultation with Deepika Bhardwaj</p>
 
           <form id="vip-consultation-form">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div class="form-row-2col">
               <div>
                 <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Your Full Name *</label>
                 <input type="text" id="form-name" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="e.g. Vikramaditya Singhania" required>
@@ -1283,7 +1311,7 @@
               </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div class="form-row-2col">
               <div>
                 <label style="display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem;">Email Address *</label>
                 <input type="email" id="form-email" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #D5DBD7; border-radius: var(--radius-sm); font-family: inherit; font-size: 0.92rem;" placeholder="name@domain.com" required>
@@ -1324,7 +1352,7 @@
        ========================================================================== -->
   <footer class="site-footer" style="background: #121513; color: #D3DAD5; padding: 4.8rem 0 2.2rem; border-top: 2px solid var(--gold-metallic);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 3.5rem; margin-bottom: 3.5rem;">
+      <div class="footer-columns-grid">
         <!-- Brand Info -->
         <div>
           <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.9rem;">
@@ -1382,7 +1410,7 @@
       </div>
 
       <!-- Footer Bottom -->
-      <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: #7D8882;">
+      <div class="footer-bottom-row">
         <div style="max-width: 650px; line-height: 1.5;">
           <strong>RERA & Advisory Disclaimer:</strong> Luxora Realty is an independent luxury real estate consulting and advisory practice founded by Deepika Bhardwaj. All project specifications, visual renderings, prices, and floor plans are sourced directly from registered real estate developers and are subject to verification under UP RERA / Haryana RERA.
         </div>
